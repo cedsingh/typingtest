@@ -26,7 +26,7 @@ textArea.addEventListener('keyup', function(e){
 	}
 });
 
-textArea.addEventListener('keypress', function(e){
+textArea.addEventListener('input', function(e){
 	if(!counter)
 		setTimer();
 });
