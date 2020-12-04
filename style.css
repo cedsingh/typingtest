@@ -68,6 +68,9 @@ textarea {
 .highlight {
 	background-color: blue;
 }
+.wpm {
+	font-size: 24px;
+}
 /*responsiveness*/
 
 @media only screen and (max-width: 767px) {
