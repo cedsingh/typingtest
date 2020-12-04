@@ -3,13 +3,15 @@ const textArea = document.querySelector('#textarea');
 const timer = document.querySelector('.timer');
 const wpm = document.querySelector('.wpm');
 var countWord = 1, counter;
+var prevChar = "";
 textArea.addEventListener('keyup', function(e){
 	let index = paragraph.search(textArea.value);
 	if(index > -1 && (textArea.value.length > index)) {
 		changeColor("blue");
-		if(e.key == " "){
+		if(e.key == " " && prevChar != " "){
 			countWord++;
 		}
+		prevChar = e.key;
 		if(paragraph.length == textArea.value.length){
 			changeColor("green")
 			clearInterval(counter);
@@ -46,6 +48,7 @@ function reset() {
 	counter = null;
 	textArea.value = "";
 	timer.innerText = "00:00:00";
+	wp.innerHTML = "0";
 	changeColor("#dddddd");
 }
 
