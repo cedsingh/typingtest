@@ -10,6 +10,10 @@ textArea.addEventListener('keyup', function(e){
 		changeColor("blue");
 		if(e.key == " " && prevChar != " "){
 			countWord++;
+			prevChar = " ";
+		}
+		else {
+			prevChar = "";
 		}
 		if(paragraph.length == textArea.value.length){
 			changeColor("green")
@@ -23,7 +27,6 @@ textArea.addEventListener('keyup', function(e){
 });
 
 textArea.addEventListener('keypress', function(e){
-	prevChar = e.key;
 	if(!counter)
 		setTimer();
 });
