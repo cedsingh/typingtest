@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Typing Test</title>
+</head>
+<body>
+	<header class="header">
+		<h1>Typing Speed Test</h1>
+	</header>
+	<main class="main">
+		<section class="message">
+			<article class="container">
+				<p>This is a typing test. Your goal is to duplicate the provided text, EXACTLY, in the field below. The timer starts when you start typing, and only stops when you match this text exactly. Good Luck!</p>
+			</article>
+		</section>
+		<section class="container">
+			<p class="type-text">Eddie Ate Dynamite, Good Bye Eddie.</p>
+			<textarea id="textarea" rows="8"></textarea>
+			<div class="row">
+				<div class="timer">00:00:00</div>
+				<div>WPM:<span class="wpm">0</span></div>
+				<button class="rst-btn" onclick="reset()">RESET</button>
+			</div>
+		</section>
+	</main>
+	<!-- <aside>
+		<h2>Fastest Typists</h2>
+	</aside> -->
+	<footer class="footer">
+		<p>&#169; Vishal Singh</p>
+	</footer>
+</body>
+<script type="text/javascript" src="script.js"></script>
+</html>
