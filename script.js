@@ -51,7 +51,7 @@ function reset() {
 	counter = null;
 	textArea.value = "";
 	timer.innerText = "00:00:00";
-	wp.innerHTML = "0";
+	wpm.innerHTML = "0";
 	changeColor("#dddddd");
 }
 
