@@ -4,7 +4,8 @@ const timer = document.querySelector('.timer');
 const wpm = document.querySelector('.wpm');
 var countWord = 1, counter;
 textArea.addEventListener('keyup', function(e){
-	if(paragraph.search(textArea.value) > -1) {
+	let index = paragraph.search(textArea.value);
+	if(index > -1 && (textArea.value.length > index)) {
 		changeColor("blue");
 		if(e.key == " "){
 			countWord++;
