@@ -44,6 +44,7 @@ function reset() {
 	clearInterval(counter);
 	counter = null;
 	textArea.value = "";
+	timer.innerText = "00:00:00";
 	changeColor("white");
 }
 
